@@ -1,0 +1,17 @@
+version: "3"
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports:
+      - 15672:15672
+      - 5672:5672
+  publisher:
+    build:
+      context: .
+      dockerfile: ./publisher/Dockerfile
+    command: "-broker=amqp://rabbitmq:5672"
+  subscriber:
+    build:
+      context: .
+      dockerfile: ./subscriber/Dockerfile
+    command: "-broker=amqp://rabbitmq:5672"
