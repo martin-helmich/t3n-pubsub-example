@@ -1,5 +1,7 @@
 # Minimal Pub/Sub example with Go
 
+[:de: German README](./README.de.md)
+
 This repository contains a minimal example on how to implement the [Publish-/Subscribe Pattern][pubsub] with Go and RabbitMQ.
 
 These code examples complement my recent article on the Publish-/Subscribe Pattern in the [T3N Magazine](https://t3n.de/magazin/).
