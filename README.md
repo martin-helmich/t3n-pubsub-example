@@ -4,7 +4,7 @@ This repository contains a minimal example on how to implement the [Publish-/Sub
 
 These code examples complement my recent article on the Publish-/Subscribe Pattern in the [T3N Magazine](https://t3n.de/magazin/).
 
-This repo consists of two pieceses of software: a *Publisher* and a *Subscriber*.
+This repo consists of two pieces of software: a *Publisher* and a *Subscriber*.
 
 1. The *Publisher* publishes events (here in the form of a JSON-encoded string) to an event broker (in this case, [RabbitMQ][rmq]). In this example, the publisher simply pushes a `UserCreatedMessage` every five seconds (this is a demo of the concept, after all).
 1. The *Subscriber* subscribes to the `UserCreatedMessage` published at the message broker and processes these messages (by printing them to the command line -- again, this is a demo).
